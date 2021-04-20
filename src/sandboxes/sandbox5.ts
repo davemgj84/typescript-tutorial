@@ -1,34 +1,34 @@
 // any types:
 // Kind of reverts this to basic Javascript - be careful when using any types:
 
-// let age: any = 25;
+let aged: any = 25;
 
-// age = 33;
-// console.log(age);
+aged = 33;
+console.log(aged);
 
-// age = "david";
-// console.log(age);
+aged = "david";
+console.log(aged);
 
-// age = true;
-// console.log(age);
+aged = true;
+console.log(aged);
 
-// age = { name: "david" };
-// console.log(age);
+aged = { name: "david" };
+console.log(aged);
 
-// let mixed: any[] = [];
+let mixes: any[] = [];
 
-// mixed.push(5);
-// mixed.push("david");
-// mixed.push(false);
+mixes.push(5);
+mixes.push("david");
+mixes.push(false);
 
-// console.log(mixed);
+console.log(mixes);
 
 // values can be swapped - can see how mistakes can be made in the future - careful with any types:
 
-// let ninja: { name: any; age: any };
+let ronin: { name: any; aged: any };
 
-// ninja = { name: "yoshi", age: 33 };
-// console.log(ninja);
+ronin = { name: "yoshi", aged: 33 };
+console.log(ronin);
 
-// ninja = { name: 25, age: "mario" };
-// console.log(ninja);
+ronin = { name: 25, aged: "mario" };
+console.log(ronin);

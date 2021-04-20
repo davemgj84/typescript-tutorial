@@ -1,57 +1,57 @@
 // explicit types
 
 // define types within a variable
-// let character: string;
-// let age: number;
-// let isLoggedIn: boolean;
+let individual: string;
+let yearsOld: number;
+let isLoggedIn: boolean;
 
 // errors
-// age = "luigi";
+// yearsOld = "luigi";
 
-// age = 30;
+yearsOld = 30;
 
 // error
 // isLoggedIn = 25;
 
-// isLoggedIn = true;
+isLoggedIn = true;
 
 // arrays
 
 // sometimes we want to initialize with an empty array - so we can push to it;
 
-// let ninjas: string[] = [];
+let ninjas: string[] = [];
 
-// ninjas.push("david");
+ninjas.push("david");
 
 // union types
 
-// let mixed: (string | number | boolean)[] = [];
+let mixed: (string | number | boolean)[] = [];
 
-// mixed.push("hello");
-// mixed.push(42);
-// mixed.push(false);
-// console.log(mixed);
+mixed.push("hello");
+mixed.push(42);
+mixed.push(false);
+console.log(mixed);
 
-// let uid: string | number;
-// uid = 123;
-// uid = "123";
+let uid: string | number;
+uid = 123;
+uid = "123";
 
 // objects
 
 // want to be more specific as this could be assign as an array as well:
-// let ninjaOne: object;
+let ninjaOne: object;
 
-// ninjaOne = { name: "david", age: 36 };
+ninjaOne = { name: "david", yearsOld: 36 };
 
-// ninjaOne = [];
+ninjaOne = [];
 
 // Assing the object variable with structure of types
 
-// let ninjaTwo: {
-//   name: string;
-//   age: number;
-//   beltColour: string;
-// };
+let ninjaTwo: {
+  name: string;
+  yearsOld: number;
+  beltColour: string;
+};
 
 // the object needs to retain the same structure as above:
-// ninjaTwo = { name: "Kim", age: 39, beltColour: "black" };
+ninjaTwo = { name: "Kim", yearsOld: 39, beltColour: "black" };
