@@ -10,8 +10,10 @@ const me = {
         return amount;
     },
 };
-let someone;
-console.log(me);
+const greetPerson = (person) => {
+    console.log(`Hello ${person.name}`);
+};
+greetPerson(me);
 const invOne = new Invoice("David", "artwork on the website", 42);
 const invTwo = new Invoice("Kim", "artwork on the website", 42);
 let invoices = [];
@@ -20,10 +22,12 @@ invoices.push(invTwo);
 invoices.forEach((inv) => {
     console.log(inv.format());
 });
+// Interacting with the DOM with Typescript
+// Type casting by adding ' as HTMLFormElement '
 const form = document.querySelector(".new-item-form");
 // Inputs:
 const type = document.querySelector("#type");
-const toFrom = document.querySelector("#toFrom");
+const toFrom = document.querySelector("#tofrom");
 const details = document.querySelector("#details");
 const amount = document.querySelector("#amount");
 form.addEventListener("submit", (e) => {

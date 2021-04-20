@@ -2,14 +2,14 @@ import { Invoice } from "./classes/Invoice.js";
 
 // interfaces:
 
-interface isPerson {
+interface IsPerson {
   name: string;
   age: number;
   speak(a: string): void;
   spend(a: number): number;
 }
 
-const me: isPerson = {
+const me: IsPerson = {
   name: "David",
   age: 36,
   speak(text: string): void {
@@ -21,9 +21,11 @@ const me: isPerson = {
   },
 };
 
-let someone: isPerson;
+const greetPerson = (person: IsPerson) => {
+  console.log(`Hello ${person.name}`);
+};
 
-console.log(me);
+greetPerson(me);
 
 const invOne = new Invoice("David", "artwork on the website", 42);
 const invTwo = new Invoice("Kim", "artwork on the website", 42);
@@ -36,11 +38,14 @@ invoices.forEach((inv) => {
   console.log(inv.format());
 });
 
+// Interacting with the DOM with Typescript
+
+// Type casting by adding ' as HTMLFormElement '
 const form = document.querySelector(".new-item-form") as HTMLFormElement;
 
 // Inputs:
 const type = document.querySelector("#type") as HTMLSelectElement;
-const toFrom = document.querySelector("#toFrom") as HTMLInputElement;
+const toFrom = document.querySelector("#tofrom") as HTMLInputElement;
 const details = document.querySelector("#details") as HTMLInputElement;
 const amount = document.querySelector("#amount") as HTMLInputElement;
 
